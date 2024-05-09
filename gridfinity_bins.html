@@ -26,11 +26,12 @@
       hole_overhang_remedy: true,
       chambers: 1,
       withLabel: "disabled",
-      fingerslide: true,
+      fingerslide: false,
       labelWidth: 0,
       wall_thickness: 0.95,
-      efficient_floor: false,
+      efficient_floor: true,
       lip_style: "normal",
+	  hex: true,
     };
     
     const model_param_desriptions = {
@@ -47,6 +48,7 @@
       wall_thickness: "Thickness of outer walls (Zack's design is 0.95)",
       efficient_floor: "Efficient floor option saves material and time, but the floor is not smooth (only applies if no magnets, screws, or finger-slide used)",
       lip_style: "Style of lip at top of walls, can be 'normal', 'reduced', or 'none'",
+	  hex: "Hollow out sides/bottom with hexagons n.b. will increase render time ~4x",
     };
     
     (async() => {
@@ -252,7 +254,7 @@
     </div>
     <div id="view-panel" class="col">
       <div class="text title desktop">
-        <h2>Gridfinity Parametric Web Generator</h2>
+        <h2>Gridfinity Parametric Web Generator w/Hex</h2>
       </div>
       <div class="text desktop">
       <a href="https://github.com/vector76/Web_OpenSCAD_Customizer">Web OpenSCAD Customizer Project</a><br/>
